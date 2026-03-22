@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="@color/scouthub_background"
+        android:pathData="M54,54 m-50,0 a50,50 0,1,1,100,0 a50,50 0,1,1,-100,0" />
+    
+    <!-- Outer ring -->
+    <path
+        android:fillColor="@color/scouthub_accent_green"
+        android:pathData="M54,54 m-48,0 a48,48 0,1,1,96,0 a48,48 0,1,1,-96,0" />
+    
+    <!-- Inner circle -->
+    <path
+        android:fillColor="@color/scouthub_background"
+        android:pathData="M54,54 m-42,0 a42,42 0,1,1,84,0 a42,42 0,1,1,-84,0" />
+    
+    <!-- ScoutHub Text -->
+    <path
+        android:fillColor="@color/scouthub_accent_green"
+        android:pathData="M25,45 L25,55 L30,55 L30,50 L35,50 L35,55 L40,55 L40,45 L35,45 L35,48 L30,48 L30,45 Z" />
+    
+    <path
+        android:fillColor="@color/scouthub_accent_green"
+        android:pathData="M45,45 L45,55 L50,55 L50,50 L55,50 L55,55 L60,55 L60,45 L55,45 L55,48 L50,48 L50,45 Z" />
+    
+    <path
+        android:fillColor="@color/scouthub_accent_green"
+        android:pathData="M65,45 L65,55 L70,55 L70,50 L75,50 L75,55 L80,55 L80,45 L75,45 L75,48 L70,48 L70,45 Z" />
+    
+    <!-- Hub text -->
+    <path
+        android:fillColor="@color/scouthub_text_primary"
+        android:pathData="M30,58 L30,65 L35,65 L35,62 L38,62 L38,65 L43,65 L43,58 L38,58 L38,61 L35,61 L35,58 Z" />
+    
+    <path
+        android:fillColor="@color/scouthub_text_primary"
+        android:pathData="M45,58 L45,65 L50,65 L50,58 Z" />
+    
+    <path
+        android:fillColor="@color/scouthub_text_primary"
+        android:pathData="M52,58 L52,65 L57,65 L57,58 Z" />
+    
+    <path
+        android:fillColor="@color/scouthub_text_primary"
+        android:pathData="M59,58 L59,65 L64,65 L64,58 Z" />
+    
+    <path
+        android:fillColor="@color/scouthub_text_primary"
+        android:pathData="M66,58 L66,65 L71,65 L71,58 Z" />
+</vector>

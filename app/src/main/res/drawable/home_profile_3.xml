@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M100,100m-90,0a90,90 0,1,1 180,0a90,90 0,1,1 -180,0"/>
+    
+    <!-- Person with realistic features -->
+    <!-- Hair (short style) -->
+    <path
+        android:fillColor="#212121"
+        android:pathData="M70,70 Q70,55 100,55 T130,70 Q130,80 125,85 L75,85 Q70,80 70,70 Z"/>
+    
+    <!-- Face -->
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M75,90 Q75,130 100,130 T125,90 Q125,85 120,80 L80,80 Q75,85 75,90 Z"/>
+    
+    <!-- Eyes -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M82,95 L87,95 L87,100 L82,100 Z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M113,95 L118,95 L118,100 L113,100 Z"/>
+    
+    <!-- Pupils -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M84,97 L85,97 L85,98 L84,98 Z"/>
+    <path
+        android:fillColor="#000000"
+        android:pathData="M115,97 L116,97 L116,98 L115,98 Z"/>
+    
+    <!-- Eyebrows -->
+    <path
+        android:fillColor="#212121"
+        android:pathData="M80,92 L88,92"/>
+    <path
+        android:fillColor="#212121"
+        android:pathData="M112,92 L120,92"/>
+    
+    <!-- Beard stubble -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M85,110 Q100,112 115,110"/>
+    <path
+        android:fillColor="#424242"
+        android:pathData="M90,115 Q100,117 110,115"/>
+    
+    <!-- Nose -->
+    <path
+        android:fillColor="#795548"
+        android:pathData="M100,105 L98,115 L102,115 Z"/>
+    
+    <!-- Mouth -->
+    <path
+        android:fillColor="#795548"
+        android:pathData="M92,120 Q100,122 108,120"/>
+    
+    <!-- Neck -->
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M90,130 L110,130 L105,145 L95,145 Z"/>
+    
+    <!-- Shoulders -->
+    <path
+        android:fillColor="#F44336"
+        android:pathData="M60,145 L140,145 L135,170 L65,170 Z"/>
+</vector>

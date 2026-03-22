@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M100,100m-90,0a90,90 0,1,1 180,0a90,90 0,1,1 -180,0"/>
+    
+    <!-- Inner circle for depth -->
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M100,100m-75,0a75,75 0,1,1 150,0a75,75 0,1,1 -150,0"/>
+    
+    <!-- User icon (abstract person shape) -->
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M100,65 m-15,0 a15,15 0,1,1 30,0 a15,15 0,1,1 -30,0"/>
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M70,125 c0,-15 15,-22 30,-22 s30,7 30,22 v15 H70 z"/>
+    
+    <!-- Decorative ring -->
+    <path
+        android:fillColor="#4CAF50"
+        android:strokeWidth="2"
+        android:pathData="M100,15 m-85,0 a85,85 0,1,1 170,0 a85,85 0,1,1 -170,0"/>
+</vector>

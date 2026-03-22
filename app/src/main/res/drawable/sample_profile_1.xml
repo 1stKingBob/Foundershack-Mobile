@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Background circle with gradient effect -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M100,100m-90,0a90,90 0,1,1 180,0a90,90 0,1,1 -180,0"/>
+    
+    <!-- Inner circle for depth -->
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M100,100m-75,0a75,75 0,1,1 150,0a75,75 0,1,1 -150,0"/>
+    
+    <!-- Abstract geometric pattern -->
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M100,60 L120,80 L120,90 L100,110 L80,90 L80,80 Z"/>
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M100,120 L110,130 L100,140 L90,130 Z"/>
+    
+    <!-- Decorative elements -->
+    <path
+        android:fillColor="#A5D6A7"
+        android:pathData="M70,70 m-8,0 a8,8 0,1,1 16,0 a8,8 0,1,1 -16,0"/>
+    <path
+        android:fillColor="#A5D6A7"
+        android:pathData="M130,70 m-8,0 a8,8 0,1,1 16,0 a8,8 0,1,1 -16,0"/>
+    <path
+        android:fillColor="#A5D6A7"
+        android:pathData="M100,150 m-6,0 a6,6 0,1,1 12,0 a6,6 0,1,1 -12,0"/>
+</vector>

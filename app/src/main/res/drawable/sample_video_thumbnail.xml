@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="300dp"
+    android:viewportWidth="400"
+    android:viewportHeight="300">
+    
+    <!-- Video background -->
+    <path
+        android:fillColor="@color/scouthub_dark_grey"
+        android:pathData="M0,0h400v300h-400z"/>
+    
+    <!-- Play button -->
+    <path
+        android:fillColor="@color/scouthub_white"
+        android:pathData="M150,100l100,50l-100,50z"/>
+    
+    <!-- Video duration badge -->
+    <path
+        android:fillColor="@color/scouthub_black"
+        android:pathData="M320,260h60v20h-60z"/>
+    <path
+        android:fillColor="@color/scouthub_white"
+        android:pathData="M330,270h40v10h-40z"/>
+    
+    <!-- Duration text -->
+    <path
+        android:fillColor="@color/scouthub_white"
+        android:pathData="M335,275h5v5h-5zM342,275h5v5h-5zM349,275h5v5h-5z"/>
+</vector>

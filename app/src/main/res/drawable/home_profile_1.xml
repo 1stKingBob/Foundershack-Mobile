@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M100,100m-90,0a90,90 0,1,1 180,0a90,90 0,1,1 -180,0"/>
+    
+    <!-- Person with realistic features -->
+    <!-- Hair -->
+    <path
+        android:fillColor="#3E2723"
+        android:pathData="M65,70 Q65,50 100,50 T135,70 Q135,85 130,90 L70,90 Q65,85 65,70 Z"/>
+    
+    <!-- Face -->
+    <path
+        android:fillColor="#FFDBAC"
+        android:pathData="M70,90 Q70,130 100,130 T130,90 Q130,85 125,80 L75,80 Q70,85 70,90 Z"/>
+    
+    <!-- Eyes -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M80,95 L85,95 L85,100 L80,100 Z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M115,95 L120,95 L120,100 L115,100 Z"/>
+    
+    <!-- Pupils -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M82,97 L83,97 L83,98 L82,98 Z"/>
+    <path
+        android:fillColor="#000000"
+        android:pathData="M117,97 L118,97 L118,98 L117,98 Z"/>
+    
+    <!-- Eyebrows -->
+    <path
+        android:fillColor="#3E2723"
+        android:pathData="M78,92 L88,92"/>
+    <path
+        android:fillColor="#3E2723"
+        android:pathData="M112,92 L122,92"/>
+    
+    <!-- Nose -->
+    <path
+        android:fillColor="#FFCC80"
+        android:pathData="M100,105 L98,115 L102,115 Z"/>
+    
+    <!-- Mouth -->
+    <path
+        android:fillColor="#D84315"
+        android:pathData="M92,120 Q100,125 108,120"/>
+    
+    <!-- Neck -->
+    <path
+        android:fillColor="#FFDBAC"
+        android:pathData="M90,130 L110,130 L105,145 L95,145 Z"/>
+    
+    <!-- Shoulders -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M60,145 L140,145 L135,170 L65,170 Z"/>
+</vector>

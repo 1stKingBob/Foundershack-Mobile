@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="454"
+    android:viewportHeight="762">
+    
+    <!-- Based on user's logo image - keeping the circular design with SH branding -->
+    
+    <!-- Main outer circle - dark blue -->
+    <path
+        android:fillColor="#1E3A8A"
+        android:pathData="M227,381 m-200,0 a200,200 0,1,1,400,0 a200,200 0,1,1,-400,0" />
+    
+    <!-- Inner white circle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M227,381 m-160,0 a160,160 0,1,1,320,0 a160,160 0,1,1,-320,0" />
+    
+    <!-- Medium blue circle -->
+    <path
+        android:fillColor="#3B82F6"
+        android:pathData="M227,381 m-120,0 a120,120 0,1,1,240,0 a120,120 0,1,1,-240,0" />
+    
+    <!-- Center white circle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M227,381 m-80,0 a80,80 0,1,1,160,0 a80,80 0,1,1,-160,0" />
+    
+    <!-- SH letters in center - based on user's logo style -->
+    <!-- S letter -->
+    <path
+        android:fillColor="#1E3A8A"
+        android:strokeWidth="8"
+        android:strokeColor="#1E3A8A"
+        android:pathData="M180,360 L200,360 L200,380 L190,380 L190,400 L200,400 L200,420 L180,420 L180,400 L190,400 L190,380 L180,380 Z" />
+    
+    <!-- H letter -->
+    <path
+        android:fillColor="#1E3A8A"
+        android:strokeWidth="8"
+        android:strokeColor="#1E3A8A"
+        android:pathData="M220,360 L240,360 L240,420 L260,420 L280,420 L300,360 L320,360 L340,420 L300,420 L300,440 L280,440 L260,440 L240,440 L240,420 L260,420 L260,400 L280,400 L280,380 L300,380 L300,360 Z" />
+    
+    <!-- Small decorative dots like in user's logo - using path instead of circle -->
+    <path
+        android:fillColor="#3B82F6"
+        android:pathData="M200,440 m-6,0 a6,6 0,1,1,12,0 a6,6 0,1,1,-12,0" />
+    
+    <path
+        android:fillColor="#3B82F6"
+        android:pathData="M227,440 m-6,0 a6,6 0,1,1,12,0 a6,6 0,1,1,-12,0" />
+    
+    <path
+        android:fillColor="#3B82F6"
+        android:pathData="M254,440 m-6,0 a6,6 0,1,1,12,0 a6,6 0,1,1,-12,0" />
+</vector>

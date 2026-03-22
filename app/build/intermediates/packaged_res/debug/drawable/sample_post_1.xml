@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="300dp"
+    android:viewportWidth="400"
+    android:viewportHeight="300">
+    
+    <!-- Football field background -->
+    <path
+        android:fillColor="@color/scouthub_light_green"
+        android:pathData="M0,0h400v300h-400z"/>
+    
+    <!-- Field lines -->
+    <path
+        android:fillColor="@color/scouthub_white"
+        android:strokeColor="@color/scouthub_white"
+        android:strokeWidth="2"
+        android:pathData="M200,0v300M0,150h400M100,75a25,25 0,0,1 50,0a25,25 0,0,1 -50,0zM300,225a25,25 0,0,1 50,0a25,25 0,0,1 -50,0z"/>
+</vector>

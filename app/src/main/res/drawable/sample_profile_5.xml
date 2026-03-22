@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="#F44336"
+        android:pathData="M100,100m-90,0a90,90 0,1,1 180,0a90,90 0,1,1 -180,0"/>
+    
+    <!-- Inner circle for depth -->
+    <path
+        android:fillColor="#EF5350"
+        android:pathData="M100,100m-75,0a75,75 0,1,1 150,0a75,75 0,1,1 -150,0"/>
+    
+    <!-- Abstract diamond pattern -->
+    <path
+        android:fillColor="#C62828"
+        android:pathData="M100,65 L120,85 L100,105 L80,85 Z"/>
+    <path
+        android:fillColor="#C62828"
+        android:pathData="M100,115 L115,130 L100,145 L85,130 Z"/>
+    
+    <!-- Cross pattern -->
+    <path
+        android:fillColor="#D32F2F"
+        android:pathData="M95,70 L105,70 L105,130 L95,130 Z"/>
+    <path
+        android:fillColor="#D32F2F"
+        android:pathData="M70,95 L130,95 L130,105 L70,105 Z"/>
+    
+    <!-- Corner elements -->
+    <path
+        android:fillColor="#E57373"
+        android:pathData="M70,70 m-6,0 a6,6 0,1,1 12,0 a6,6 0,1,1 -12,0"/>
+    <path
+        android:fillColor="#E57373"
+        android:pathData="M130,70 m-6,0 a6,6 0,1,1 12,0 a6,6 0,1,1 -12,0"/>
+    <path
+        android:fillColor="#E57373"
+        android:pathData="M70,130 m-6,0 a6,6 0,1,1 12,0 a6,6 0,1,1 -12,0"/>
+    <path
+        android:fillColor="#E57373"
+        android:pathData="M130,130 m-6,0 a6,6 0,1,1 12,0 a6,6 0,1,1 -12,0"/>
+</vector>

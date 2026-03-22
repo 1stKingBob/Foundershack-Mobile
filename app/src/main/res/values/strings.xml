@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ScoutHub</string>
+    <string name="scouthub_logo">ScoutHub</string>
+    <string name="home">Home</string>
+    <string name="chats">Chats</string>
+    <string name="reels">Reels</string>
+    <string name="calendar">Calendar</string>
+    <string name="profile">Profile</string>
+    <string name="search_hint">Search clubs, scouts, players...</string>
+    <string name="send_request">Send Request</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="shows_promise">Shows Promise</string>
+    <string name="add_to_calendar">Add to Calendar</string>
+    <string name="create_post">Create Post</string>
+</resources>

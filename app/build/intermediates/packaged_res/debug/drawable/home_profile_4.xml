@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="#9C27B0"
+        android:pathData="M100,100m-90,0a90,90 0,1,1 180,0a90,90 0,1,1 -180,0"/>
+    
+    <!-- Person with realistic features -->
+    <!-- Hair (wavy style) -->
+    <path
+        android:fillColor="#6D4C41"
+        android:pathData="M65,70 Q65,50 100,50 T135,70 Q135,85 130,90 L70,90 Q65,85 65,70 Z"/>
+    <path
+        android:fillColor="#6D4C41"
+        android:pathData="M70,75 Q75,65 85,70"/>
+    <path
+        android:fillColor="#6D4C41"
+        android:pathData="M130,75 Q125,65 115,70"/>
+    
+    <!-- Face -->
+    <path
+        android:fillColor="#FFCCBC"
+        android:pathData="M70,90 Q70,130 100,130 T130,90 Q130,85 125,80 L75,80 Q70,85 70,90 Z"/>
+    
+    <!-- Eyes (almond shaped) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M80,95 Q82,93 85,95 Q82,97 80,95 Z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M115,95 Q117,93 120,95 Q117,97 115,95 Z"/>
+    
+    <!-- Pupils -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M82,95 L83,95 L83,96 L82,96 Z"/>
+    <path
+        android:fillColor="#000000"
+        android:pathData="M117,95 L118,95 L118,96 L117,96 Z"/>
+    
+    <!-- Eyelashes -->
+    <path
+        android:fillColor="#6D4C41"
+        android:pathData="M80,94 L78,92"/>
+    <path
+        android:fillColor="#6D4C41"
+        android:pathData="M85,94 L87,92"/>
+    <path
+        android:fillColor="#6D4C41"
+        android:pathData="M115,94 L113,92"/>
+    <path
+        android:fillColor="#6D4C41"
+        android:pathData="M120,94 L122,92"/>
+    
+    <!-- Eyebrows (arched) -->
+    <path
+        android:fillColor="#6D4C41"
+        android:pathData="M78,90 Q82,88 88,90"/>
+    <path
+        android:fillColor="#6D4C41"
+        android:pathData="M112,90 Q118,88 122,90"/>
+    
+    <!-- Nose -->
+    <path
+        android:fillColor="#FFAB91"
+        android:pathData="M100,105 L98,115 L102,115 Z"/>
+    
+    <!-- Lips (fuller) -->
+    <path
+        android:fillColor="#E91E63"
+        android:pathData="M90,118 Q100,122 110,118"/>
+    <path
+        android:fillColor="#C2185B"
+        android:pathData="M90,122 Q100,125 110,122"/>
+    
+    <!-- Neck -->
+    <path
+        android:fillColor="#FFCCBC"
+        android:pathData="M90,130 L110,130 L105,145 L95,145 Z"/>
+    
+    <!-- Shoulders -->
+    <path
+        android:fillColor="#009688"
+        android:pathData="M60,145 L140,145 L135,170 L65,170 Z"/>
+</vector>

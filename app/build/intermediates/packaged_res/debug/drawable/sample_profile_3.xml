@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M100,100m-90,0a90,90 0,1,1 180,0a90,90 0,1,1 -180,0"/>
+    
+    <!-- Inner circle for depth -->
+    <path
+        android:fillColor="#64B5F6"
+        android:pathData="M100,100m-75,0a75,75 0,1,1 150,0a75,75 0,1,1 -150,0"/>
+    
+    <!-- Abstract wave pattern -->
+    <path
+        android:fillColor="#1976D2"
+        android:pathData="M60,90 Q80,70 100,90 T140,90 L140,110 Q120,130 100,110 T60,110 Z"/>
+    
+    <!-- Geometric elements -->
+    <path
+        android:fillColor="#0D47A1"
+        android:pathData="M100,75 m-12,0 a12,12 0,1,1 24,0 a12,12 0,1,1 -24,0"/>
+    
+    <!-- Decorative triangles -->
+    <path
+        android:fillColor="#42A5F5"
+        android:pathData="M75,120 L85,135 L65,135 Z"/>
+    <path
+        android:fillColor="#42A5F5"
+        android:pathData="M125,120 L135,135 L115,135 Z"/>
+    
+    <!-- Small dots -->
+    <path
+        android:fillColor="#90CAF9"
+        android:pathData="M70,70 m-4,0 a4,4 0,1,1 8,0 a4,4 0,1,1 -8,0"/>
+    <path
+        android:fillColor="#90CAF9"
+        android:pathData="M130,70 m-4,0 a4,4 0,1,1 8,0 a4,4 0,1,1 -8,0"/>
+    <path
+        android:fillColor="#90CAF9"
+        android:pathData="M100,145 m-4,0 a4,4 0,1,1 8,0 a4,4 0,1,1 -8,0"/>
+</vector>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M100,100m-90,0a90,90 0,1,1 180,0a90,90 0,1,1 -180,0"/>
+    
+    <!-- Inner circle for depth -->
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M100,100m-75,0a75,75 0,1,1 150,0a75,75 0,1,1 -150,0"/>
+    
+    <!-- Abstract star pattern -->
+    <path
+        android:fillColor="#F57C00"
+        android:pathData="M100,65 L105,75 L115,75 L107,82 L110,92 L100,85 L90,92 L93,82 L85,75 L95,75 Z"/>
+    
+    <!-- Geometric shapes -->
+    <path
+        android:fillColor="#FF8F00"
+        android:pathData="M85,110 L115,110 L115,140 L85,140 Z"/>
+    
+    <!-- Decorative dots -->
+    <path
+        android:fillColor="#FFE082"
+        android:pathData="M75,75 m-6,0 a6,6 0,1,1 12,0 a6,6 0,1,1 -12,0"/>
+    <path
+        android:fillColor="#FFE082"
+        android:pathData="M125,75 m-6,0 a6,6 0,1,1 12,0 a6,6 0,1,1 -12,0"/>
+    <path
+        android:fillColor="#FFE082"
+        android:pathData="M100,155 m-5,0 a5,5 0,1,1 10,0 a5,5 0,1,1 -10,0"/>
+</vector>

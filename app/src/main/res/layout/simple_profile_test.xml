@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/scouthub_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile Page"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/scouthub_text_primary"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: John Doe"
+        android:textSize="16sp"
+        android:textColor="@color/scouthub_text_secondary"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sport: Football"
+        android:textSize="16sp"
+        android:textColor="@color/scouthub_text_secondary"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Position: Forward"
+        android:textSize="16sp"
+        android:textColor="@color/scouthub_text_secondary"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age: 19"
+        android:textSize="16sp"
+        android:textColor="@color/scouthub_text_secondary"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Height: 175 cm, Weight: 70 kg"
+        android:textSize="16sp"
+        android:textColor="@color/scouthub_text_secondary"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Club: FC Barcelona Youth"
+        android:textSize="16sp"
+        android:textColor="@color/scouthub_text_secondary"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location: Sydney, Australia"
+        android:textSize="16sp"
+        android:textColor="@color/scouthub_text_secondary"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact: +61 123 456 789"
+        android:textSize="16sp"
+        android:textColor="@color/scouthub_text_secondary" />
+
+</LinearLayout>

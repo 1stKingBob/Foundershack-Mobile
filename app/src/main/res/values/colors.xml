@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- ScoutHub Web Version Colors -->
+    <color name="scouthub_background">#F5F7F9</color>
+    <color name="scouthub_card_background">#FFFFFF</color>
+    <color name="scouthub_accent_green">#4CAF50</color>
+    <color name="scouthub_accent_yellow">#FFC107</color>
+    <color name="scouthub_light_green_card">#E8F5E9</color>
+    <color name="scouthub_text_primary">#333333</color>
+    <color name="scouthub_text_secondary">#666666</color>
+    <color name="scouthub_border">#E0E0E0</color>
+    <color name="scouthub_nav_background">#FFFFFF</color>
+    <color name="scouthub_live_tag">#FF4444</color>
+    <color name="scouthub_new_tag">#4CAF50</color>
+    
+    <!-- Legacy colors for compatibility -->
+    <color name="scouthub_green">#4CAF50</color>
+    <color name="scouthub_light_green">#E8F5E9</color>
+    <color name="scouthub_dark_grey">#333333</color>
+    <color name="scouthub_medium_grey">#666666</color>
+    <color name="scouthub_light_grey">#F5F7F9</color>
+    <color name="scouthub_white">#FFFFFF</color>
+    <color name="scouthub_orange">#FFC107</color>
+    <color name="scouthub_black">#FF000000</color>
+    
+    <!-- Additional profile colors -->
+    <color name="scouthub_accent_blue">#2196F3</color>
+    <color name="scouthub_purple">#9C27B0</color>
+    <color name="scouthub_red">#F44336</color>
+    <color name="scouthub_teal">#009688</color>
+    <color name="scouthub_beige">#F5DEB3</color>
+    <color name="scouthub_brown">#795548</color>
+    <color name="scouthub_dark_brown">#5D4037</color>
+</resources>

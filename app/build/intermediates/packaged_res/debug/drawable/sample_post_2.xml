@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="300dp"
+    android:viewportWidth="400"
+    android:viewportHeight="300">
+    
+    <!-- Trophy background -->
+    <path
+        android:fillColor="@color/scouthub_orange"
+        android:pathData="M0,0h400v300h-400z"/>
+    
+    <!-- Trophy shape -->
+    <path
+        android:fillColor="@color/scouthub_white"
+        android:pathData="M200,50m-30,0a30,30 0,1,1 60,0a30,30 0,1,1 -60,0z"/>
+    <path
+        android:fillColor="@color/scouthub_white"
+        android:pathData="M170,80h60v40h-60z"/>
+    <path
+        android:fillColor="@color/scouthub_white"
+        android:pathData="M160,120h80v20h-80z"/>
+    
+    <!-- Stars -->
+    <path
+        android:fillColor="@color/scouthub_white"
+        android:pathData="M100,150l5,15h15l-12,10l5,15l-13,-10l-13,10l5,-15l-12,-10h15z"/>
+    <path
+        android:fillColor="@color/scouthub_white"
+        android:pathData="M300,150l5,15h15l-12,10l5,15l-13,-10l-13,10l5,-15l-12,-10h15z"/>
+</vector>
