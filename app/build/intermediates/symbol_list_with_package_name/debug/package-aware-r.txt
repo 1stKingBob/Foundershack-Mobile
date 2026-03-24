@@ -3460,6 +3460,7 @@ id app_bar_layout
 id arc
 id asConfigured
 id assists_count
+id assists_input
 id async
 id attach_button
 id author_name
@@ -3528,6 +3529,7 @@ id coordinator
 id cos
 id counterclockwise
 id cradle
+id create_post_text
 id currentState
 id custom
 id customPanel
@@ -3659,6 +3661,7 @@ id ghost_view
 id ghost_view_holder
 id glide_custom_view_target_tag
 id goals_count
+id goals_input
 id gone
 id graph
 id graph_wrap
@@ -3680,6 +3683,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id image_preview
 id immediateStop
 id included
 id indeterminate
@@ -3737,11 +3741,13 @@ id material_value_index
 id matrix
 id media_actions
 id media_controller_compat_view_tag
+id media_preview_container
 id message
 id message_input
 id messages_recycler_view
 id middle
 id mini
+id minutes_input
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -3837,6 +3843,7 @@ id pathRelative
 id peekHeight
 id percent
 id performance
+id photo_button
 id pin
 id player_view
 id pooling_container_listener_holder_tag
@@ -3844,7 +3851,9 @@ id position
 id position_input
 id postLayout
 id post_button
+id post_header
 id post_image
+id post_video
 id posts_recycler_view
 id pressed
 id profile_image
@@ -3861,6 +3870,7 @@ id rectangles
 id reel_layout
 id reels_content
 id reels_recycler_view
+id remove_media_button
 id report_drawn
 id reverseSawtooth
 id right
@@ -3937,7 +3947,9 @@ id startToEnd
 id startVertical
 id staticLayout
 id staticPostLayout
+id stats_button
 id stats_content
+id stats_input_container
 id stats_recycler_view
 id status
 id status_bar_latest_event_content
@@ -4013,7 +4025,9 @@ id upload_layout
 id useLogo
 id username
 id vertical_only
+id video_button
 id video_decoder_gl_surface_view
+id video_preview
 id video_thumbnail
 id view_offset_helper
 id view_profile_button

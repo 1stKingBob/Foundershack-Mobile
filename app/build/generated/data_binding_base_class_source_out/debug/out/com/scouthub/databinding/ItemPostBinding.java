@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.VideoView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
@@ -34,17 +35,25 @@ public final class ItemPostBinding implements ViewBinding {
   public final TextView date;
 
   @NonNull
+  public final TextView postHeader;
+
+  @NonNull
   public final ImageView postImage;
+
+  @NonNull
+  public final VideoView postVideo;
 
   private ItemPostBinding(@NonNull CardView rootView, @NonNull Button addToCalendarButton,
       @NonNull TextView authorName, @NonNull TextView content, @NonNull TextView date,
-      @NonNull ImageView postImage) {
+      @NonNull TextView postHeader, @NonNull ImageView postImage, @NonNull VideoView postVideo) {
     this.rootView = rootView;
     this.addToCalendarButton = addToCalendarButton;
     this.authorName = authorName;
     this.content = content;
     this.date = date;
+    this.postHeader = postHeader;
     this.postImage = postImage;
+    this.postVideo = postVideo;
   }
 
   @Override
@@ -98,14 +107,26 @@ public final class ItemPostBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.post_header;
+      TextView postHeader = ViewBindings.findChildViewById(rootView, id);
+      if (postHeader == null) {
+        break missingId;
+      }
+
       id = R.id.post_image;
       ImageView postImage = ViewBindings.findChildViewById(rootView, id);
       if (postImage == null) {
         break missingId;
       }
 
+      id = R.id.post_video;
+      VideoView postVideo = ViewBindings.findChildViewById(rootView, id);
+      if (postVideo == null) {
+        break missingId;
+      }
+
       return new ItemPostBinding((CardView) rootView, addToCalendarButton, authorName, content,
-          date, postImage);
+          date, postHeader, postImage, postVideo);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

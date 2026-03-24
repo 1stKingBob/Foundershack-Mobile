@@ -203,14 +203,20 @@
                 android:orientation="vertical"
                 android:padding="16dp">
 
-                <TextView
+                <EditText
+                    android:id="@+id/create_post_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edit_text_background"
                     android:padding="12dp"
-                    android:text="Share an update, highlight, or stat..."
-                    android:textColor="@color/scouthub_text_secondary"
-                    android:textSize="14sp" />
+                    android:hint="Share an update, highlight, or stat..."
+                    android:textColor="@color/scouthub_text_primary"
+                    android:textColorHint="@color/scouthub_text_secondary"
+                    android:textSize="14sp"
+                    android:minLines="2"
+                    android:maxLines="4"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:scrollbars="vertical" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -219,6 +225,7 @@
                     android:orientation="horizontal">
 
                     <Button
+                        android:id="@+id/photo_button"
                         android:layout_width="0dp"
                         android:layout_height="36dp"
                         android:layout_marginEnd="8dp"
@@ -229,6 +236,7 @@
                         android:textSize="12sp" />
 
                     <Button
+                        android:id="@+id/video_button"
                         android:layout_width="0dp"
                         android:layout_height="36dp"
                         android:layout_marginEnd="8dp"
@@ -239,25 +247,117 @@
                         android:textSize="12sp" />
 
                     <Button
+                        android:id="@+id/stats_button"
                         android:layout_width="0dp"
                         android:layout_height="36dp"
-                        android:layout_marginEnd="8dp"
                         android:layout_weight="1"
                         android:background="@drawable/share_button_background"
                         android:text="Stats"
                         android:textColor="@color/scouthub_text_primary"
                         android:textSize="12sp" />
 
+                </LinearLayout>
+
+                <!-- Media Preview Area -->
+                <LinearLayout
+                    android:id="@+id/media_preview_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <!-- Image Preview -->
+                    <ImageView
+                        android:id="@+id/image_preview"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone" />
+
+                    <!-- Video Preview -->
+                    <VideoView
+                        android:id="@+id/video_preview"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="8dp"
+                        android:visibility="gone" />
+
+                    <!-- Stats Input -->
+                    <LinearLayout
+                        android:id="@+id/stats_input_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/edit_text_background"
+                        android:padding="12dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add Your Stats"
+                            android:textColor="@color/scouthub_text_primary"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp" />
+
+                        <EditText
+                            android:id="@+id/goals_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:hint="Goals"
+                            android:inputType="number"
+                            android:textColor="@color/scouthub_text_primary"
+                            android:textColorHint="@color/scouthub_text_secondary" />
+
+                        <EditText
+                            android:id="@+id/assists_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:hint="Assists"
+                            android:inputType="number"
+                            android:textColor="@color/scouthub_text_primary"
+                            android:textColorHint="@color/scouthub_text_secondary" />
+
+                        <EditText
+                            android:id="@+id/minutes_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Minutes Played"
+                            android:inputType="number"
+                            android:textColor="@color/scouthub_text_primary"
+                            android:textColorHint="@color/scouthub_text_secondary" />
+
+                    </LinearLayout>
+
+                    <!-- Remove Media Button -->
                     <Button
-                        android:layout_width="0dp"
-                        android:layout_height="36dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/share_button_background"
-                        android:text="Article"
-                        android:textColor="@color/scouthub_text_primary"
+                        android:id="@+id/remove_media_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_gravity="end"
+                        android:background="@android:color/transparent"
+                        android:text="Remove"
+                        android:textColor="@color/scouthub_accent_green"
                         android:textSize="12sp" />
 
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/post_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_background"
+                    android:text="Post"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
 
             </LinearLayout>
 

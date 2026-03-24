@@ -43,6 +43,24 @@ public class ChatsFragment extends Fragment {
         searchBar = view.findViewById(R.id.search_bar);
         tabLayout = view.findViewById(R.id.tab_layout);
         chatsRecyclerView = view.findViewById(R.id.chats_recycler_view);
+        
+        // Setup search functionality
+        setupSearchBar();
+    }
+    
+    private void setupSearchBar() {
+        searchBar.addTextChangedListener(new android.text.TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                filterChats(tabLayout.getSelectedTabPosition());
+            }
+
+            @Override
+            public void afterTextChanged(android.text.Editable s) {}
+        });
     }
 
     private void setupRecyclerView() {
@@ -82,8 +100,53 @@ public class ChatsFragment extends Fragment {
     }
 
     private void filterChats(int tabPosition) {
-        // TODO: Implement chat filtering logic
-        chatAdapter.notifyDataSetChanged();
+        String searchQuery = searchBar.getText().toString().toLowerCase().trim();
+        android.util.Log.d("ChatsFragment", "Filtering chats - tab: " + tabPosition + ", search: '" + searchQuery + "'");
+        
+        List<Chat> filteredList = new ArrayList<>();
+        
+        try {
+            for (Chat chat : chatsList) {
+                // First apply tab filtering
+                boolean matchesTab = false;
+                String chatType = chat.getType();
+                
+                if (tabPosition == 0) { // All tab
+                    matchesTab = true;
+                } else if (tabPosition == 1) { // Scouts tab
+                    matchesTab = "scout".equals(chatType);
+                } else if (tabPosition == 2) { // Players tab
+                    matchesTab = "player".equals(chatType);
+                } else if (tabPosition == 3) { // Club tab
+                    matchesTab = "club".equals(chatType);
+                }
+                
+                // Then apply search filter
+                boolean matchesSearch = false;
+                if (searchQuery.isEmpty()) {
+                    matchesSearch = true; // No search query means all chats match
+                } else {
+                    // Search in name and message
+                    String name = chat.getName().toLowerCase();
+                    String message = chat.getLastMessage().toLowerCase();
+                    
+                    matchesSearch = name.contains(searchQuery) || message.contains(searchQuery);
+                }
+                
+                // Add chat only if it matches both filters
+                if (matchesTab && matchesSearch) {
+                    filteredList.add(chat);
+                }
+            }
+        } catch (Exception e) {
+            android.util.Log.e("ChatsFragment", "Error filtering chats: " + e.getMessage());
+            // If filtering fails, show all chats
+            filteredList = new ArrayList<>(chatsList);
+        }
+        
+        // Update the adapter with filtered list
+        chatAdapter.updateList(filteredList);
+        android.util.Log.d("ChatsFragment", "Filtered chats count: " + filteredList.size());
     }
 
     private void loadMockData() {

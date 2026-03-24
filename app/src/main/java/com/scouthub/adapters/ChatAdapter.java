@@ -31,6 +31,11 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder
         this.listener = listener;
     }
 
+    public void updateList(List<Chat> newList) {
+        this.chatsList = newList;
+        notifyDataSetChanged();
+    }
+
     @NonNull
     @Override
     public ChatViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

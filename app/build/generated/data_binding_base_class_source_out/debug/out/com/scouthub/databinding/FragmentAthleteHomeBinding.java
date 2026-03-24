@@ -4,7 +4,10 @@ package com.scouthub.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.VideoView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -22,24 +25,83 @@ public final class FragmentAthleteHomeBinding implements ViewBinding {
   private final NestedScrollView rootView;
 
   @NonNull
+  public final EditText assistsInput;
+
+  @NonNull
+  public final EditText createPostText;
+
+  @NonNull
+  public final EditText goalsInput;
+
+  @NonNull
+  public final ImageView imagePreview;
+
+  @NonNull
+  public final LinearLayout mediaPreviewContainer;
+
+  @NonNull
+  public final EditText minutesInput;
+
+  @NonNull
+  public final Button photoButton;
+
+  @NonNull
+  public final Button postButton;
+
+  @NonNull
   public final RecyclerView postsRecyclerView;
+
+  @NonNull
+  public final Button removeMediaButton;
 
   @NonNull
   public final EditText searchBar;
 
   @NonNull
+  public final Button statsButton;
+
+  @NonNull
+  public final LinearLayout statsInputContainer;
+
+  @NonNull
   public final RecyclerView storiesRecyclerView;
+
+  @NonNull
+  public final Button videoButton;
+
+  @NonNull
+  public final VideoView videoPreview;
 
   @NonNull
   public final VideoView videoThumbnail;
 
   private FragmentAthleteHomeBinding(@NonNull NestedScrollView rootView,
-      @NonNull RecyclerView postsRecyclerView, @NonNull EditText searchBar,
-      @NonNull RecyclerView storiesRecyclerView, @NonNull VideoView videoThumbnail) {
+      @NonNull EditText assistsInput, @NonNull EditText createPostText,
+      @NonNull EditText goalsInput, @NonNull ImageView imagePreview,
+      @NonNull LinearLayout mediaPreviewContainer, @NonNull EditText minutesInput,
+      @NonNull Button photoButton, @NonNull Button postButton,
+      @NonNull RecyclerView postsRecyclerView, @NonNull Button removeMediaButton,
+      @NonNull EditText searchBar, @NonNull Button statsButton,
+      @NonNull LinearLayout statsInputContainer, @NonNull RecyclerView storiesRecyclerView,
+      @NonNull Button videoButton, @NonNull VideoView videoPreview,
+      @NonNull VideoView videoThumbnail) {
     this.rootView = rootView;
+    this.assistsInput = assistsInput;
+    this.createPostText = createPostText;
+    this.goalsInput = goalsInput;
+    this.imagePreview = imagePreview;
+    this.mediaPreviewContainer = mediaPreviewContainer;
+    this.minutesInput = minutesInput;
+    this.photoButton = photoButton;
+    this.postButton = postButton;
     this.postsRecyclerView = postsRecyclerView;
+    this.removeMediaButton = removeMediaButton;
     this.searchBar = searchBar;
+    this.statsButton = statsButton;
+    this.statsInputContainer = statsInputContainer;
     this.storiesRecyclerView = storiesRecyclerView;
+    this.videoButton = videoButton;
+    this.videoPreview = videoPreview;
     this.videoThumbnail = videoThumbnail;
   }
 
@@ -70,9 +132,63 @@ public final class FragmentAthleteHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.assists_input;
+      EditText assistsInput = ViewBindings.findChildViewById(rootView, id);
+      if (assistsInput == null) {
+        break missingId;
+      }
+
+      id = R.id.create_post_text;
+      EditText createPostText = ViewBindings.findChildViewById(rootView, id);
+      if (createPostText == null) {
+        break missingId;
+      }
+
+      id = R.id.goals_input;
+      EditText goalsInput = ViewBindings.findChildViewById(rootView, id);
+      if (goalsInput == null) {
+        break missingId;
+      }
+
+      id = R.id.image_preview;
+      ImageView imagePreview = ViewBindings.findChildViewById(rootView, id);
+      if (imagePreview == null) {
+        break missingId;
+      }
+
+      id = R.id.media_preview_container;
+      LinearLayout mediaPreviewContainer = ViewBindings.findChildViewById(rootView, id);
+      if (mediaPreviewContainer == null) {
+        break missingId;
+      }
+
+      id = R.id.minutes_input;
+      EditText minutesInput = ViewBindings.findChildViewById(rootView, id);
+      if (minutesInput == null) {
+        break missingId;
+      }
+
+      id = R.id.photo_button;
+      Button photoButton = ViewBindings.findChildViewById(rootView, id);
+      if (photoButton == null) {
+        break missingId;
+      }
+
+      id = R.id.post_button;
+      Button postButton = ViewBindings.findChildViewById(rootView, id);
+      if (postButton == null) {
+        break missingId;
+      }
+
       id = R.id.posts_recycler_view;
       RecyclerView postsRecyclerView = ViewBindings.findChildViewById(rootView, id);
       if (postsRecyclerView == null) {
+        break missingId;
+      }
+
+      id = R.id.remove_media_button;
+      Button removeMediaButton = ViewBindings.findChildViewById(rootView, id);
+      if (removeMediaButton == null) {
         break missingId;
       }
 
@@ -82,9 +198,33 @@ public final class FragmentAthleteHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.stats_button;
+      Button statsButton = ViewBindings.findChildViewById(rootView, id);
+      if (statsButton == null) {
+        break missingId;
+      }
+
+      id = R.id.stats_input_container;
+      LinearLayout statsInputContainer = ViewBindings.findChildViewById(rootView, id);
+      if (statsInputContainer == null) {
+        break missingId;
+      }
+
       id = R.id.stories_recycler_view;
       RecyclerView storiesRecyclerView = ViewBindings.findChildViewById(rootView, id);
       if (storiesRecyclerView == null) {
+        break missingId;
+      }
+
+      id = R.id.video_button;
+      Button videoButton = ViewBindings.findChildViewById(rootView, id);
+      if (videoButton == null) {
+        break missingId;
+      }
+
+      id = R.id.video_preview;
+      VideoView videoPreview = ViewBindings.findChildViewById(rootView, id);
+      if (videoPreview == null) {
         break missingId;
       }
 
@@ -94,8 +234,10 @@ public final class FragmentAthleteHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentAthleteHomeBinding((NestedScrollView) rootView, postsRecyclerView,
-          searchBar, storiesRecyclerView, videoThumbnail);
+      return new FragmentAthleteHomeBinding((NestedScrollView) rootView, assistsInput,
+          createPostText, goalsInput, imagePreview, mediaPreviewContainer, minutesInput,
+          photoButton, postButton, postsRecyclerView, removeMediaButton, searchBar, statsButton,
+          statsInputContainer, storiesRecyclerView, videoButton, videoPreview, videoThumbnail);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

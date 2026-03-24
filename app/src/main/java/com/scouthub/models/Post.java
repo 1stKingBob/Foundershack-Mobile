@@ -19,6 +19,16 @@ public class Post {
         this.date = date;
         this.imageUrl = imageUrl;
     }
+    
+    public Post(String id, String authorName, String content, String type, String date, String imageUrl, String videoUrl) {
+        this.id = id;
+        this.authorName = authorName;
+        this.content = content;
+        this.type = type;
+        this.date = date;
+        this.imageUrl = imageUrl;
+        this.videoUrl = videoUrl;
+    }
 
     // Getters and Setters
     public String getId() { return id; }

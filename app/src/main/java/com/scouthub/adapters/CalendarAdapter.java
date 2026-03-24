@@ -29,6 +29,11 @@ public class CalendarAdapter extends RecyclerView.Adapter<CalendarAdapter.Calend
         this.listener = listener;
     }
 
+    public void updateList(List<CalendarEvent> newList) {
+        this.eventsList = newList;
+        notifyDataSetChanged();
+    }
+
     @NonNull
     @Override
     public CalendarViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
